@@ -1,0 +1,105 @@
+\documentclass[helvetica,notitle,nologo]{europecv}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[toc, page]{appendix}
+
+\newcommand{\grade}[1]{%
+\begin{tikzpicture}
+\clip (1em-.3em,-.3em) rectangle (5em +.5em ,.3em);
+\begin{scope}
+\clip (1em-.3em,-.3em) rectangle (#1em +.5em ,.3em);
+\foreach \x in {1,2,...,5}{
+ \path[fill=cyan] (\x em,0) circle (.25em);
+}
+\end{scope}
+\foreach \x in {1,2,...,5}{
+ \draw (\x em,0) circle (.25em);
+}
+\end{tikzpicture}%
+}
+
+\ecvname{Premer, Alexander}
+\ecvnationality{Norwegian}
+\ecvdateofbirth{Dec. 19, 1991}
+\ecvbeforepicture{\raggedleft}
+\ecvpicture[height=3cm]{img/me}
+\ecvafterpicture{\ecvspace{-3.5cm}}
+\begin{document}
+\begin{europecv}
+\ecvpersonalinfo
+\ecvitem{Telephone No.}{+47 942 38 318}
+\ecvitem{Email}{Alex.premer@gmail.com}
+\ecvitem{GitHub}{github.com/parlex}
+
+\ecvsection{Education}
+\ecvitem{University of Oslo\\Aug. 2014- Aug. 2016}{\textbf{Master Degree in Informatics: Programming and networks: }In my master thesis I will research ways of dealing with data transfer in contexts with varying 
+connectivity to the internet and Android development}
+\ecvitem{}{}
+\ecvitem{San Jose State University\\Aug. 2012- Dec. 2012}{\textbf{One semester as an exchange student}}
+\ecvitem{}{}
+\ecvitem{University of Oslo\\Aug. 2011- July 2014}{\textbf{Bachelor Degree in Informatics: Programming and networks: }After a semester at Oslo And Akershus University College of Applied Sciences
+I figured out that I rather wanted to study at UiO and that programming was something
+I would like to continue doing}
+\ecvitem{}{}
+\ecvitem{Skedsmo VGS\\Aug. 2007- July 2010}{\textbf{Studiespesialiserende: Realfag}}
+
+\ecvsection{Work}
+\ecvitem{March 2014 - Jan. 2015}{IKT-Consulent at Sykehuspartner. Worked as 
+customer support for critical health systems in Helse Sør-Øst.}
+\ecvitem{}{}
+\ecvitem{Dec. 2011 - Aug. 2012}{Sales clerk at Shell/7-eleven, Tåsen. I had 
+responsibility for the operation when I worked. This involved tasks as
+customer-service, refilling our products and keeping the shop up to desired
+standards.}
+\ecvitem{}{}
+\ecvitem{Oct. 2008 - Sept. 2011}{Sales clerk at ICA, Alexander Kiellands
+gate. I had responsibility for the kitchen, lottery, sale, restocking
+merchandise and keeping the store up to standards.}
+\ecvitem{}{}
+\ecvitem{Feb. 2008 - Aug. 2008}{Sales clerk at Flateby Mat A/S, Flateby}
+
+\ecvsection{Volunteering}
+\ecvitem{2015}{\textbf{JavaZone Volunteer: } Java Conference}
+\ecvitem{Sept. 2015 - Current}{\textbf{Founder \& Boardmember of IFI-Sjakk: }Student organization
+working to create a chess community at the faculty}
+\ecvitem{March 2015 - Current}{\textbf{Founder \& Boardmember of IFI-ProgNett: }Student organization
+working to promote a good learning environment among people studying programming and networks at UiO}
+\ecvitem{Feb. 2013 - May 2013}{\textbf{Founder \& Boardmember of IFI-ProgNett: }PR-responsible}
+\ecvitem{2013}{\textbf{JavaZone Volunteer: }Java conference}
+\ecvitem{2013}{\textbf{Dagen@ifi: }Oslo's biggest IT-career day}
+
+\ecvsection{Tools \& Technologies}
+\ecvitem{}{
+      \begin{tabular}{ c c c }
+         \textbf{Know Well} & \textbf{Know} & \textbf{Used} \\ 
+          Java & Assembler & Hibernate \\  
+          Python & C\# & Spring \\  
+          \LaTeX & Javascript & Maven \\  
+           & jQuery & TomCat \\  
+           & HTML/CSS & Gradle \\  
+           & Git &  \\  
+           & Scheme &  \\  
+           & C &  \\  
+           & Android &  \\  
+           & Linux &    
+      \end{tabular}
+}
+
+\ecvsection{Interests}
+\ecvitem{}{
+   \begin{center}
+      \begin{tabular}{ c c c c}
+         Chess & Squash & Swimming & Gym \\  
+          &  &  &  \\  
+         Programming & Technology & Hiking & E-sports\\  
+          &  &  &  \\  
+         Backpacking &  &  & \\  
+      \end{tabular}
+   \end{center}
+}
+
+\ecvsection{}
+\ecvitem{}{References available upon request.}
+\end{europecv}
+\end{document}
